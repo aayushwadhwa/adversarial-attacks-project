@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Adversarial Attacks on Machine Learning Models
+
+The project involves using gradient based methods to attack state-of-the-art imagenet models- ResNet, InceptionV3 and EfficientNet. We have checked and compare robustness of these models using FGSM, PGD and DeepFool attacks provided by attacking tools such as CleverHans, ART etc.
 
 You can use the [editor on GitHub](https://github.com/aayushwadhwa/adversarial-attacks-project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
