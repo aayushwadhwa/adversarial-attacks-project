@@ -8,7 +8,7 @@ The project is a part of UW ECE653, Software Testing, Quality Assurance and Main
 
 ## Attacks Performed
 * Fast Gradient Sign Method
-* Post Gradient Descent
+* Projected Gradient Descent
 * DeepFool
 
 ## Tool Used
