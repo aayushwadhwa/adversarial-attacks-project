@@ -2,38 +2,29 @@
 
 The project involves using gradient based methods to attack state-of-the-art imagenet models- ResNet, InceptionV3 and EfficientNet. We have checked and compare robustness of these models using FGSM, PGD and DeepFool attacks provided by attacking tools such as CleverHans, ART etc.
 
-You can use the [editor on GitHub](https://github.com/aayushwadhwa/adversarial-attacks-project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Attack Methods
+Three attack methods have been used to compare different tools on CV models. These are:
+1. Fast Gradient Sign Method: Basic, fast and effective of all the gradient based method.
+2. Projected Gradient Descent Method: Produces best results with minimum perturabations
+3. DeepFool: Most accurate and effective attacking method
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Attacking Tools
+Above methods were used with these attacking tools:
+1. Cleverhans
+2. Adversarial Robustness Toolbox
+3. AdvBox
+4. Foolbox
 
-### Markdown
+## Extension
+There are two new attack methods that are added with this project.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### DeepFool
+Cleverhans has been extended with DeepFool attack method and the code can be found [here](https://github.com/aayushwadhwa/cleverhans/blob/master/cleverhans/tf2/attacks/deep_fool.py)
 
-```markdown
-Syntax highlighted code block
+#### GAN for Adversarial Attacks
+Generative networks were trained with adversarial images to construct more adversarial examples that will fool machine learning CV models. The code and results of the implementation can be found on [this Jupyter Notebook](https://github.com/aayushwadhwa/adversarial-attacks-project/blob/main/Attack%20GAN/Adversarial_Attack_with_DCGAN%20(1).ipynb) 
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+Please feel free to view the code in the [github repository](https://github.com/aayushwadhwa/adversarial-attacks-project), and raise a pull request to enhance the methods and the project.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aayushwadhwa/adversarial-attacks-project/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The project was develop collective by Aayush Wadhwa and Aru Chahal for ECE653: Software Testing, Quality Assurance and Maintenance under the guidance of Prof. Vijay Ganesh.
